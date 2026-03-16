@@ -1,0 +1,21 @@
+/* 自定义样式 */
+
+/* 调整内容区域宽度 */
+.md-grid {
+    max-width: 1440px;
+}
+
+/* 表格样式优化 */
+.md-typeset table {
+    font-size: 0.85em;
+}
+
+/* 代码块样式 */
+.md-typeset code {
+    font-size: 0.9em;
+}
+
+/* 隐藏标题中的下划线文件名字符 */
+.md-nav__link {
+    text-decoration: none;
+}

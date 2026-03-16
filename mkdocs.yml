@@ -1,0 +1,86 @@
+site_name: 中学教育资源收集整理
+site_description: 收集整理中学阶段各科教育资源
+site_author: wingkong1978
+
+# 网站地址（本地预览时使用）
+site_url: http://localhost:8000/
+
+# 版权信息
+copyright: 'Copyright &copy; 2026'
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+# 插件
+plugins:
+  - search
+
+# 扩展
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+# 额外 CSS/JS
+extra_css:
+  - stylesheets/extra.css
+
+# 导航菜单
+nav:
+  - 首页: index.md
+  - 网站汇总:
+    - 中学教育资源网站: 网站汇总.md
+    - 广州中考信息网站: 广州中考信息网站.md
+  - 初中资源:
+    - 语文: resources/初中/语文/_初中语文学习资源汇总.md
+    - 数学: resources/初中/数学/_广州中考数学备考资源.md
+    - 英语: resources/初中/英语/_广州中考英语备考资源.md
+    - 道法: resources/初中/政治/_广州中考道法备考资源.md
+  - 资源索引: 汇总.md
+  - 关于: README.md
+
+# 额外的社会链接
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wingkong1978/edu-resource-collector
+  generator: false
